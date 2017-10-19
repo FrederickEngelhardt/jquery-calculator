@@ -99,69 +99,69 @@ function input(value){
 }
 
 // ****** eval() math_array ********
-// function doMath(){
-//   total = eval(inputVal);
-//   screen.innerHTML = total
-//   inputVal = total.toString()
-// }
-
-// NO EVAL the hard way
 function doMath(){
-  var num_before = 0
-  var middle_operator
-  var num_after = 0
-  var active_num = 0
-  var regexp = /\+|\÷|\/|\x|\*|\-/ig
-  // loops from begining to end.
-  for (let i = 0; i < inputVal.length; i++){
-
-    // Case: Is there an operator?
-    if (inputVal[i].match(regexp) !== null)) {
-      // Case: value num_before has been modified
-      if (num_before > 0){
-
-      }
-      num_before += parseInt(num_after)
-      if
-    }
-    if (inputVal[i] === '+'){
-
-      active_num = 0
-
-    } else if (inputVal[i] === '-'){
-      active_num = 0
-
-    } else if (inputVal[i] === '*'){
-      active_num = 0
-
-    } else if (inputVal[i] === '/'){
-      total += active_num
-      active_num = 0
-
-    }
-    else {
-      active_num = active_num.concat(inputVal[i])
-      console.log(active_num)
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //final part of the process
-  total = //??
+  total = eval(inputVal);
   screen.innerHTML = total
   inputVal = total.toString()
 }
+
+// // NO EVAL the hard way
+// function doMath(){
+//   var num_before = 0
+//   var middle_operator
+//   var num_after = 0
+//   var active_num = 0
+//   var regexp = /\+|\÷|\/|\x|\*|\-/ig
+//   // loops from begining to end.
+//   for (let i = 0; i < inputVal.length; i++){
+//
+//     // Case: Is there an operator?
+//     if (inputVal[i].match(regexp) !== null)) {
+//       // Case: value num_before has been modified
+//       if (num_before > 0){
+//
+//       }
+//       num_before += parseInt(num_after)
+//       if
+//     }
+//     if (inputVal[i] === '+'){
+//
+//       active_num = 0
+//
+//     } else if (inputVal[i] === '-'){
+//       active_num = 0
+//
+//     } else if (inputVal[i] === '*'){
+//       active_num = 0
+//
+//     } else if (inputVal[i] === '/'){
+//       total += active_num
+//       active_num = 0
+//
+//     }
+//     else {
+//       active_num = active_num.concat(inputVal[i])
+//       console.log(active_num)
+//     }
+//   }
+// }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//   //final part of the process
+//   total = //??
+//   screen.innerHTML = total
+//   inputVal = total.toString()
+// }
